@@ -14,7 +14,7 @@ export const SITE_CONFIG = {
     windows: {
       label: "Download for Windows",
       filename: "FamilyVault-Setup-1.0.0.exe",
-      url: "https://github.com/Rajnishantkr/hactoberFest-familyVault-downloadsite",
+      url: "https://family-vault-download.duckdns.org/family-vault-win32-x64-1.0.0.zip",
       size: "3.4 GB",
       os: "Windows 10 / 11",
       architecture: "x64",
