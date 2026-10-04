@@ -1,1 +1,42 @@
-/* Family Vault specific overrides if needed */
+/* Fine-grain surfaces and interaction details for Family Vault. */
+.hero-scene {
+  isolation: isolate;
+}
+
+.hero-window-wrap {
+  perspective: 1400px;
+}
+
+.hero-window-wrap > div {
+  transform-origin: center top;
+  box-shadow: 0 12px 28px rgba(23, 26, 24, 0.055), 0 1px 3px rgba(23, 26, 24, 0.035);
+}
+
+/* Keep surfaces defined by their borders, with only a quiet lift where needed. */
+[class*="shadow-"] {
+  box-shadow: 0 1px 3px rgba(23, 26, 24, 0.045) !important;
+}
+
+button,
+a,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

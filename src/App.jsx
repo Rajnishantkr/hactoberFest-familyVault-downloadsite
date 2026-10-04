@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ProductDemo from "./components/ProductDemo";
@@ -13,7 +12,7 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#F7F6F2] text-[#171A18] selection:bg-[#DCE9E1] selection:text-[#1F4D3A] font-sans antialiased overflow-x-hidden">
+    <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] selection:bg-[var(--brand-soft)] selection:text-[var(--brand)] font-sans antialiased overflow-x-hidden">
       {/* 1. Minimal Sticky Navigation */}
       <Navbar />
 

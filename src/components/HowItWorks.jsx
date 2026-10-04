@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function HowItWorks() {
   const steps = [
@@ -29,28 +28,28 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="how-it-works" className="py-20 bg-[#F7F6F2] border-t border-[#D8D9D3]">
+    <section id="how-it-works" className="py-20 bg-[var(--background)] border-t border-[var(--border)]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section Heading */}
         <div className="max-w-2xl mb-12 text-left">
-          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-[#171A18]">
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-[var(--foreground)]">
             How it works
           </h2>
-          <p className="mt-2 text-sm text-[#626862] leading-relaxed">
+          <p className="mt-2 text-sm text-[var(--foreground-muted)] leading-relaxed">
             A simple, four-step local pipeline that runs entirely on your own machine.
           </p>
         </div>
 
         {/* 4-Step Process */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6">
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-lg bg-[#FFFFFF] border border-[#D8D9D3] text-left space-y-3 shadow-sm"
+              className="py-5 border-t border-[var(--border)] text-left space-y-3"
             >
-              <div className="font-mono text-xs text-[#1F4D3A] font-semibold">{step.num}</div>
-              <h3 className="text-sm font-semibold text-[#171A18]">{step.title}</h3>
-              <p className="text-xs text-[#626862] leading-relaxed">
+              <div className="font-mono text-xs text-[var(--brand)] font-semibold">{step.num}</div>
+              <h3 className="text-sm font-semibold text-[var(--foreground)]">{step.title}</h3>
+              <p className="text-xs text-[var(--foreground-muted)] leading-relaxed">
                 {step.description}
               </p>
             </div>

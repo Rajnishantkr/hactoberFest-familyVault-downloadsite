@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function Features() {
   const features = [
@@ -55,29 +54,29 @@ export default function Features() {
   ];
 
   return (
-    <section id="features" className="py-20 bg-[#ECECE7] border-t border-[#D8D9D3]">
+    <section id="features" className="py-20 bg-[var(--surface-muted)] border-t border-[var(--border)]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section Heading */}
         <div className="max-w-2xl mb-12 text-left">
-          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-[#171A18]">
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-[var(--foreground)]">
             Features
           </h2>
-          <p className="mt-2 text-sm text-[#626862] leading-relaxed">
+          <p className="mt-2 text-sm text-[var(--foreground-muted)] leading-relaxed">
             Designed for households that need reliable, searchable document storage without cloud dependencies.
           </p>
         </div>
 
         {/* Feature Grid - Paper cards with warm gray borders */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8">
           {features.map((feat, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-lg bg-[#FFFFFF] border border-[#D8D9D3] text-left space-y-2"
+              className="py-5 border-t border-[var(--border)] text-left space-y-2"
             >
-              <h3 className="text-xs font-semibold text-[#1F4D3A] uppercase tracking-wide font-mono">
+              <h3 className="text-xs font-semibold text-[var(--brand)] uppercase tracking-wide font-mono">
                 {feat.title}
               </h3>
-              <p className="text-xs text-[#626862] leading-relaxed font-normal">
+              <p className="text-xs text-[var(--foreground-muted)] leading-relaxed font-normal">
                 {feat.description}
               </p>
             </div>
