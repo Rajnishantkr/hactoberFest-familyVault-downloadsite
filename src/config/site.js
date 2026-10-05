@@ -12,13 +12,41 @@ export const SITE_CONFIG = {
   // Download Configuration
   download: {
     windows: {
+      installer: {
+        label: "Download Windows Installer (.exe)",
+        shortLabel: "Windows Installer (.exe)",
+        badge: "Recommended",
+        filename: "family-vault-1.0.0-Setup.exe",
+        url: "https://family-vault-download.duckdns.org/family-vault-1.0.0-Setup.exe",
+        evergreenUrl: "https://family-vault-download.duckdns.org/family-vault-setup.exe",
+        size: "359 MB",
+        os: "Windows 10 / 11",
+        architecture: "x64",
+        sha256: "b9c5398235e17bc5d5134702b2b602deab5114a0439b4f2a01c5dd7030451614",
+        type: "Setup Installer",
+        available: true
+      },
+      portable: {
+        label: "Download Portable Archive (.zip)",
+        shortLabel: "Portable ZIP (.zip)",
+        badge: "Standalone",
+        filename: "family-vault-win32-x64-1.0.0.zip",
+        url: "https://family-vault-download.duckdns.org/family-vault-win32-x64-1.0.0.zip",
+        evergreenUrl: "https://family-vault-download.duckdns.org/family-vault-win32-x64-latest.zip",
+        size: "370 MB",
+        os: "Windows 10 / 11",
+        architecture: "x64",
+        sha256: "c682ca8768142d6c85bb93bc37474cf1babf238892e05a54d15bc62534299834",
+        type: "Portable Standalone",
+        available: true
+      },
       label: "Download for Windows",
-      filename: "FamilyVault-Setup-1.0.0.exe",
-      url: "https://family-vault-download.duckdns.org/family-vault-win32-x64-1.0.0.zip",
-      size: "3.4 GB",
+      filename: "family-vault-1.0.0-Setup.exe",
+      url: "https://family-vault-download.duckdns.org/family-vault-1.0.0-Setup.exe",
+      size: "359 MB",
       os: "Windows 10 / 11",
       architecture: "x64",
-      sha256: "9f83b2a5d4c887e1f92e21b8c037da954628d4e9f7a11029c7849e7b23c915f0",
+      sha256: "b9c5398235e17bc5d5134702b2b602deab5114a0439b4f2a01c5dd7030451614",
       available: true
     },
     macos: {
